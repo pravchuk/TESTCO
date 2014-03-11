@@ -1,7 +1,86 @@
+/*
+ALL CSS
+*/
+
+body{
+	font-family:AppleSDGothicNeo-Thin!important;
+}
+
+.zabody{
+	margin: auto;
+	height: auto;
+	position: relative;
+}
+
+/* Header */
 .navbar-brand {
 	padding-left: 60px;
 	color: #fff;
 	background: url(../img/logo-small-white.png) no-repeat 15px 8px;
 	background-size: 30px 30px;
+}
+
+.navbar{
+	position: relative;
+	margin-bottom: 0px!important;
+}
+
+/* Main Page */
+.section-first {
+	background-color: rgba(43, 163, 212, 0.85);
+	margin: 0 auto;
+}
+
+.section-first div{
+	text-align: center;	
+	padding-top: 34px;
+}
+
+.section-first div img{
+	width: 200px;
+	height: auto;
+	opacity:0.4;
+}
+
+.section-first div p{
+	text-align: center;	
+	max-width: 600px;
+	color: white;
+	margin: auto;	
+}
+
+.section-second {
+	margin: 0 auto;
+	position:relative;
+	background-color: rgba(2, 27, 48, 0.93);
+}
+
+.section-second div{
+	background:	url('../img/online-test-center.jpg') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0.3;
+	position: absolute;
 
 }
+ .section-second h2{
+ 	position:relative;
+ 	margin:0 auto;
+ 	padding-top: 80px;
+ 	text-align: center;
+ 	color: white;
+ }
+
+
+/* NAVs */
+
+.left-sidebar{
+	position: absolute;
+}
+
+/* Login Page */
+
+
+
