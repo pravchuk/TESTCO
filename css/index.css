@@ -1,4 +1,4 @@
-/*
+	/*
 ALL CSS
 */
 
@@ -10,6 +10,11 @@ body{
 	margin: auto;
 	height: auto;
 	position: relative;
+}
+
+.container {
+	max-width:	1080px;
+	margin: 0 auto;
 }
 
 /* Header */
@@ -83,4 +88,6 @@ body{
 /* Login Page */
 
 
-
+/*Profile Page*/
+#left { display: block; width: 560px; float: left; overflow: hidden; margin-right: 20px; }
+#right { display: block; width: 240px; float: left; overflow: hidden; }
