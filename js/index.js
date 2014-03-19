@@ -1,7 +1,8 @@
 //ALL THE FUNCTION
 
 function bodyLoaded(){
-	$("#header").load("header.html"); 
+	$("#header").load("header.html");
+	$("#footer").load("footer.html");
 }
 
 function addExtraCSSjs(){
@@ -21,4 +22,4 @@ function allEvents(){
 	//rest of the events
 }
 
-document.addEventListener('load',allEvents,true);
+document.addEventListener('DOMContentLoaded',allEvents,true);
