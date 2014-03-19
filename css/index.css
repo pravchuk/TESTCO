@@ -106,6 +106,8 @@ body{
 .authors img{
 	border-radius:	75px;
 	padding: 2px;
+	width: 120px;
+	height: 120px;
 }
 
 /* Footer */
