@@ -3,7 +3,7 @@ ALL CSS
 */
 
 body{
-	font-family:AppleSDGothicNeo-Thin!important;
+	font-family:AppleSDGothicNeo-Thin;
 }
 
 .zabody{
@@ -78,7 +78,90 @@ body{
  	color: white;
  }
 
+.section-third h2{
+	position:relative;
+ 	margin:0 auto;
+ 	padding-top: 80px;
+ 	text-align: center;
+}
 
+.section-forth{
+	background: #000;
+}
+
+.section-forth h2{
+	position:relative;
+ 	margin:0 auto;
+ 	padding-top: 80px;
+ 	text-align: center;
+ 	color: white;
+}
+
+.authors{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.authors img{
+	border-radius:	75px;
+	padding: 2px;
+}
+
+/* Footer */
+
+dl {
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.footer {
+padding: 40px 0;
+background-color: rgba(43, 163, 212, 0.85);
+}
+
+.footer a{
+	color: white;
+}
+
+.footer-nav {
+float: left;
+padding: 0 20px;
+width: 20%;
+}
+
+.footer-nav .nav-item {
+line-height: 28px;
+}
+
+.footer-nav .nav-title {
+margin-bottom: 15px;
+font-family:AppleSDGothicNeo-Bold;
+}
+
+dt {
+font-weight: 700;
+}
+
+.footer-logo, .footer-nav {
+float: left;
+padding: 0 20px;
+width: 20%;
+}
+
+.footer-logo {
+margin-top: -5px;
+height: 32px;
+line-height: 32px;
+font-size: 20px;
+font-family:AppleSDGothicNeo-Bold;
+}
+
+
+.footer-logo img {
+margin-right: 10px;
+width: 20px;
+}
 /* NAVs */
 
 .left-sidebar{
