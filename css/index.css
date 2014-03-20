@@ -1,9 +1,21 @@
-	/*
+/*
 ALL CSS
 */
 
+/* Fonts */
+@font-face {
+font-family: AppleFont;
+src: url("fonts/AppleSDGothicNeo-Thin.otf") format("opentype");
+}
+
+@font-face {
+font-family: AppleFont;
+font-weight: bold;
+src: url("fonts/AppleSDGothicNeo-SemiBold.otf") format("opentype");
+}
+
 body{
-	font-family:AppleSDGothicNeo-Thin;
+	font-family:AppleFont;
 }
 
 .zabody{
@@ -21,7 +33,7 @@ body{
 .navbar-brand {
 	padding-left: 60px;
 	color: #fff;
-	background: url(../img/logo-small-white.png) no-repeat 15px 8px;
+	background: url(../img/logo-small-white.png) no-repeat 15px 9px;
 	background-size: 30px 30px;
 }
 
@@ -138,7 +150,8 @@ line-height: 28px;
 
 .footer-nav .nav-title {
 margin-bottom: 15px;
-font-family:AppleSDGothicNeo-Bold;
+font-family:AppleFont;
+font-weight: bold;
 }
 
 dt {
@@ -156,13 +169,16 @@ margin-top: -5px;
 height: 32px;
 line-height: 32px;
 font-size: 20px;
-font-family:AppleSDGothicNeo-Bold;
+font-family:AppleFont;
+font-weight: bold;
 }
 
 
 .footer-logo img {
 margin-right: 10px;
-width: 20px;
+width: 30px;
+height: 30px;
+margin-top:	-6px;
 }
 /* NAVs */
 
