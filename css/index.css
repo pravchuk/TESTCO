@@ -5,13 +5,13 @@ ALL CSS
 /* Fonts */
 @font-face {
 font-family: AppleFont;
-src: url("fonts/AppleSDGothicNeo-Thin.otf") format("opentype");
+src: local('AppleSDGothicNeo-Thin'), url("fonts/AppleSDGothicNeo-Thin.otf") format("opentype");
 }
 
 @font-face {
 font-family: AppleFont;
 font-weight: bold;
-src: url("fonts/AppleSDGothicNeo-SemiBold.otf") format("opentype");
+src: local('AppleSDGothicNeo-SemiBold'), url("fonts/AppleSDGothicNeo-SemiBold.otf") format("opentype");
 }
 
 body{
