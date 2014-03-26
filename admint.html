@@ -17,22 +17,32 @@
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="js/index.js"></script> 
-	 <link href="index.css" rel="stylesheet" media="screen">
+
+	<script>
+	function changeProfPage(theURL){
+		$("#content").load(theURL);
+	}
+	</script>
 
     <!-- Required CSS Scripts -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
   </head> 
-  <body>
- 
-  <header>
+
+  <body onload="allEvents();"> 
+     <div id="header"></div>
+
+     <div id="zabody">
+	 <div class="container">
+		<!--place your stuff here-->
+		<header>
 		<div class="wrapper">
 			<style>
-			h2 {color:Red;font-size:40px; background-color:purple}
-			h1 {color:Red; background-color:turquoise}
+			h2 {color:Black;font-size:40px; background-color:white}
+			h1 {color:Black; background-color:white}
 			
 			</style>
-			<body style="background-color:purple;">
+			<body style="background-color:white;">
 			<h2>ADMINISTRATOR</h2>
 			</div>
 	</header>
@@ -40,22 +50,23 @@
 <div class="panel">
               <ul id="myTab1" class="nav nav-tabs nav-justified">
                 <li class="section-first"><a href="#home1" data-toggle="tab">HomePage</a></li>
-                <li><a href="#profile1" data-toggle="tab">Profile</a></li>
+                <li><a href="#profile1" data-toggle="tab">Student</a></li>
                 <li><a href="#profile1" data-toggle="tab">Contributor</a></li>
 				<li><a href="#profile1" data-toggle="tab">Evaluator</a></li>
-				<li><a href="#profile1" data-toggle="tab">Validator</a></li>
+				<li onclick="changeProfPage('val.html');"><a data-toggle="tab">Validator</a></li>
 				<li><a href="#profile1" data-toggle="tab">Question Bank</a></li>
               </ul>
+			  <br><br>
               <div id="content" class="clearfix">
 		<section id="left">
 			<div id="userStats" class="clearfix">
 				<div class="pic">
-					<a href="#"><img src="#image" height="150" /></a>
+					<a href="#"><img src="img1/IMG-20131104-WA0006.jpg" height="150" /></a>
 				</div>
 				
 				<div class="data">
 					<h1>Mansi</h1>
-					<h3>Bangalore, India</h3>
+					<h3>California</h3>
 					<h4><a href="http://www.myurl.com"</a></h4>
 					<div class="socialMediaLinks">
 				<a href="https://www.facebook.com/mansi.perky" rel="me" target="_blank"><img src="" /></a>
@@ -66,9 +77,21 @@
 			</div>
 			
 			<h1>About Me:</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>E-mail:<a>mansi281194@gmail.com</a><p>
+			<p>Name:            Mansi Mishra<br>
+			   Age:             19<br>
+			   Education:       Princeton University<br>
+			   Current Employer:Apple Inc,CA<br>
+			   Email:           mansi281194@gmail.com<br>
+			   Degree:          Masters in Computer Science<br>
+			   Projects:        Quantum Computing <br>
+			   </p>
 		</section>
 		</div>
-		</body>
-		</html>
+	 </div>
+	 </div>
+	<div id="footer"></div>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootflat/js/bootstrap.min.js"></script>
+  </body> 
+</html>
