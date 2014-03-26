@@ -24,9 +24,9 @@ body{
 	position: relative;
 }
 
-.container {
+.zacontainer {
 	max-width:	1080px;
-	margin: 0 auto;
+	margin: 40px auto;
 }
 
 /* Header */
