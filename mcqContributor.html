@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <title>TESTCO Template</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Required JS scripts -->
+    <!-- Jquery -->
+     <script src="jquery.js"></script>
+    <!-- Bootstrap -->
+    <link href="bootflat/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
+    <script src="js/index.js"></script> 
+
+
+    <!-- Required CSS Scripts -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  </head> 
+
+  <body onload="allEvents();"> 
+     <div id="header"></div>
+
+     <div id="zabody">
+	 <div class="container">
+		<!-- inserting stuff here-->
+		<!--div id="upleft">
+				<div id="twentypxHt">
+					<center><b><u>Contributors</u></b></center>
+					<br><br><br>
+					<center>
+					<div class="col-md-7">
+					<ul class="nav nav-pills nav-stacked" style="max-width: 260px;" id="contributorList">
+						<li class="active"><a href="contributorForum.html" >Person 1</a></li>
+						<li><a href="contributorForum.html">Person 2</a></li>
+						<li><a href="contributorForum.html">Person 3</a></li>
+						
+					</ul>
+					
+				</div>
+				</center>
+					<!--a href="contributorForum.html">Person 1</a><br>
+					<a href="contributorForum.html">Person 2</a><br>
+					<a href="contributorForum.html">Person 3</a><br>				
+					</center>
+				</div>
+			</div-->
+			<div id="upright" class="contributor" background="grey">
+				<div id="contributorRightSide">
+
+					<div class="col-md-12"><center>
+				<h2 class="example-title">Multiple Choice Question</h2><br>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="mcqQs" class="form-control" placeholder="Enter your question here">
+				    </div>					
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="number" min="1" id="mcqQsMks" class="form-control" placeholder="Enter the number of marks for this question">
+				    </div>					
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="mcqOpt1" class="form-control" placeholder="Enter option 1">
+				    </div>					
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="mcqOpt2" class="form-control" placeholder="Enter option 2">
+				    </div>					
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="mcqOpt3" class="form-control" placeholder="Enter option 3">
+				    </div>					
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="mcqOpt4" class="form-control" placeholder="Enter option 4">
+				    </div>					
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="mcqAns" class="form-control" placeholder="Enter correct answer(s) seperated by spaces">
+				    </div>					
+				</div><br>
+				
+				<button type="button" class="btn btn-success" onclick="mcq();" >Submit for Validation</button><br><br>		
+				</div>
+				</div>
+			</div>
+	 </div>
+	 </div>
+	<div id="footer"></div>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootflat/js/bootstrap.min.js"></script>
+  </body> 
+</html>
