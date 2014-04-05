@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head> 
-    <title>Contributor page!</title>
+    <title>Contributor: Descriptive Question</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Required JS scripts -->
     <!-- Jquery -->
@@ -12,40 +12,24 @@
     <link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
-    <script src="js/index.js"></script>
-	
+    <script src="js/index.js"></script> 
+
+
     <!-- Required CSS Scripts -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    </head> 
 
-    <body onload="allEvents();"> 
-		<div id="header"></div>
-		<!--place stuff below-->
-		<div id="zabody">
-			<div id="upleft">
-				<div id="twentypxHt">
-					<center><b><u>Contributors</u></b></center>
-					<br><br><br>
-					<center>
-					<div class="col-md-7">
-					<ul class="nav nav-pills nav-stacked" style="max-width: 260px;" id="contributorList">
-						<li class="active"><a href="contributorForum.html" >Person 1</a></li>
-						<li><a href="contributorForum.html">Person 2</a></li>
-						<li><a href="contributorForum.html">Person 3</a></li>
-						
-					</ul>
-					</div>
-				</center>
-					<!--a href="contributorForum.html">Person 1</a><br>
-					<a href="contributorForum.html">Person 2</a><br>
-					<a href="contributorForum.html">Person 3</a><br-->				
-					</center>
-				</div>
-			</div>
-			<div id="upright" class="contributor">
+  </head> 
+
+  <body onload="allEvents();"> 
+     <div id="header"></div>
+
+     <div id="zabody">
+	 <div class="container">
+		
+			<div id="upright" class="contributor" background="grey">
 				<div id="contributorRightSide">
 
-					<div class="col-md-12">
+					<div class="col-md-12"><br>
 				<h2 class="example-title">Descriptive Question</h2><br>
 				<div class="row">
 					<div class="col-md-6">
@@ -63,18 +47,16 @@
 					<textarea class="form-control" id="descQsAns" placeholder="Enter the expected answer" rows="4"></textarea>
 				  </div>			   
 				</div><br>
-				<button type="button" class="btn btn-success" onclick="descriptive();" >Submit for Validation</button>			
+				<button type="button" class="btn btn-success" onclick="descriptive();" >Submit for Validation</button><br><br>			
+				</div>	
 				</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	</div>	
+	 </div>
+	 </div>
 	<div id="footer"></div>
 
-		  <!-- Include all compiled plugins (below), or include individual files as needed -->
-		  <script src="bootflat/js/bootstrap.min.js"></script>
-		  <script src="js/newContributor.js"></script> 
-    </body> 
-  
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootflat/js/bootstrap.min.js"></script>
+  </body> 
 </html>

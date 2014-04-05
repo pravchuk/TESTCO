@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html> 
   <head> 
-    <title>Contributor page!</title>
+    <title>Contributor: Home</title>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <!--Required JS scripts -->
     <!-- Jquery -->
      <script src="jquery.js"></script>
@@ -12,69 +16,33 @@
     <link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
-    <script src="js/index.js"></script>
-	
-	
+    <script src="js/index.js"></script> 
 
 
     <!-- Required CSS Scripts -->
-    <link rel="stylesheet" type="text/css" href="css/contributor.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 
   </head> 
 
   <body onload="allEvents();"> 
      <div id="header"></div>
-	 <!--place stuff below-->
-     <div id="zabody">
-     	 <div class="container">
-		 <div id="upleft">
-			<div id="twentypxHt">
-				<center><b><u>Contributors</u></b></center>
-				
-				<br><br><br>
-				<center>
-				<div class="col-md-7">
-				<ul class="nav nav-pills nav-stacked" style="max-width: 260px;" id="contributorList">
-					<li class="active"><a href="contributorForum.html" >Person 1</a></li>
-					<li><a href="contributorForum.html">Person 2</a></li>
-					<li><a href="contributorForum.html">Person 3</a></li>
-					
-				</ul>
-				
-			</div>
-			</center>
-				<!--a href="contributorForum.html">Person 1</a><br>
-				<a href="contributorForum.html">Person 2</a><br>
-				<a href="contributorForum.html">Person 3</a><br-->				
-				</center>
-			</div>
-		</div>
-		<div id="upright" class="contributor">
-			<div id="contributorRightSide">
-				<!--font face="calibri" size="5">Select the type of question</font><br>
-				<select id="questionType" onchange="displayQtype();">
-				  <option value="mcq">Multiple Choice Question</option>
-				  <option value="dq">Descriptive Question</option>
-				  <option value="dqd">Descriptive Question with Diagram</option>				  
-				</select-->
-				<li class="dropdown open">
-						<a class="tab-default dropdown-toggle" data-toggle="dropdown"><font size="4">Select the type of question</font><b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#" onclick="mcq();" data-toggle="tab">Multiple Choice Question</a></li>
-							<li><a href="#" onclick="descriptive();" data-toggle="tab">Descriptive Question</a></li>
-							<li><a href="#" onclick="descriptiveDiagram();" data-toggle="tab">Descriptive Question with Diagram</a></li>
-						</ul>
-					</li>
 
-			
-			</div>
-		</div>
-		</div>
-	 </div>	
+     <div id="zabody">
+	 <div class="zacontainer">
+		<!--place your stuff here-->
+		<h2 class="example-title">Choose type of question</h2><br>
+		
+		<div class="row tooltip-demo">
+                  <div class="col-md-7"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">Multiple Choice Question</button><br></div>
+                  <div class="col-md-7"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">Descriptive Question</button><br></div>
+                  <div class="col-md-7"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">Descriptive Question with Diagram</button><br></div>
+        </div><br><br>
+		
+	 </div>
+	 </div>
+	<div id="footer"></div>
 
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="bootflat/js/bootstrap.min.js"></script>
-	  <script src="js/contributor.js"></script> 
   </body> 
-  
 </html>
