@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <title>TESTCO Template</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Required JS scripts -->
+    <!-- Jquery -->
+     <script src="../jquery.js"></script>
+    <!-- Bootstrap -->
+    <link href="../bootflat/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../bootflat/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="../bootflat/css/bootflat.css" rel="stylesheet" media="screen">
+    <link href="../bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
+    <link href="../bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
+    <script src="../js/index.js"></script> 
+
+
+    <!-- Required CSS Scripts -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+  </head> 
+
+  <body onload="allEvents();"> 
+    <div class="testHeader">
+      <h1 class="col-md-8">TESTCO</h1>
+      <div class="timeAndStuff col-md-4">
+          <div id="timeLeft">10:30</div>
+          <div id="candidateName">Praveen Chukka</div>
+      </div>
+    </div>
+
+    <div class="testBody">
+      <div class="testArea col-md-8">
+        <!--Question-->
+        <p id="testQuestion">1. What do you give a sick lemon?</p>
+
+        <!--Answer-->
+        <div id="testAnswer">
+                  <input class="radio" style="float:left;" id="option1" type="radio" name="answer"/><label style="float:left;clear:right;" for="option1" class="">Orange</label>
+                  <input class="radio" style="float:left;" id="option2" type="radio" name="answer"/><label style="float:left;clear:right;" for="option2" class="">Apple</label>
+                  <input class="radio" style="float:left;" id="option3" type="radio" name="answer"/><label style="float:left;clear:right;" for="option3" class="">First Aid</label>
+                  <input class="radio" style="float:left;" id="option4" type="radio" name="answer"/><label style="float:left;clear:right;" for="option4" class="">Lemonaide</label>
+      </div>
+    </div>
+    <div class="rightPart col-md-4">
+      <div id="answerLegend">
+        <button id="answer1">1.</button>
+        <!-- Use a Loop to fill in these numbers -->
+        <button id="answer2">2.</button>
+        <button id="answer3">3.</button>
+        <br/>
+        <button id="answer4">4.</button>
+        <button id="answer5">5.</button>
+        <button id="answer6">6.</button>
+        <br/>
+        <button id="answer7">7.</button>
+        <button id="answer8">8.</button>
+        <button id="answer9">9.</button>
+        <br/>
+        <button id="answer10">10.</button>
+        <button id="answer11">11.</button>
+        <button id="answer12">12.</button>
+      </div>
+    </div>
+   </div>
+
+    
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../bootflat/js/bootstrap.min.js"></script>
+  </body> 
+</html>

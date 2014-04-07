@@ -192,3 +192,29 @@ margin-top:	-6px;
 /*Profile Page*/
 #left { display: block; width: 560px; float: left; overflow: hidden; margin-right: 20px; }
 #right { display: block; width: 240px; float: left; overflow: hidden; }
+
+/* Test Page */
+
+.testHeader{
+	text-align: center;
+	width: 100%;
+	height: 70px;
+}
+
+.timeAndStuff{
+	margin-top: 20px;
+}
+
+.testBody{
+	width: 1080px;
+}
+
+#answerLegend {
+	overflow:scroll;
+	height:400px;
+}
+
+#answerLegend button{
+	margin: 5px;
+	text-align: center;
+}
