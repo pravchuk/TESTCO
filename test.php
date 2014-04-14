@@ -1,4 +1,6 @@
-<?php  
+<?php
+$sub = $_GET['sub'];
+$ca = $_GET['ca'];
 // Config  
 $dbhost = 'localhost';  
 $dbname = 'testco';  

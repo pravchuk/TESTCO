@@ -16,7 +16,6 @@
     <link href="../bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="../bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="../js/index.js"></script> 
-    <script src="../js/tests.js"></script>
 
 
     <!-- Required CSS Scripts -->
@@ -24,7 +23,7 @@
 
   </head> 
 
-  <body onload="allEvents();loadQuestions();"> 
+  <body onload="allEvents();"> 
     <div class="testHeader">
       <h1 class="col-md-8">TESTCO</h1>
       <div class="timeAndStuff col-md-4">
@@ -36,14 +35,15 @@
     <div class="testBody">
       <div class="testArea col-md-9">
         <!--Question-->
-        <h3 id="testQuestion">1. What do you give a sick lemon?</h3>
+        <h3 id="testQuestion">1. Explaing why you like lemonaide.</h3>
 
         <!--Answer-->
         <div id="testAnswer">
-                  <input class="radio" style="float:left;" type="radio" name="answer" value="option1"/><label for="option1" id="option1" class="option">Orange</label><br/>
-                  <input class="radio" style="float:left;" type="radio" name="answer" value="option2"/><label for="option2" id="option1" class="option">Apple</label><br/>
-                  <input class="radio" style="float:left;" type="radio" name="answer" value="option3"/><label for="option3" id="option1" class="option">First Aid</label><br/>
-                  <input class="radio" style="float:left;" type="radio" name="answer" value="option4"/><label for="option4" id="option1" class="option">Lemonaide</label>
+                  <!-- ONLY PART CHANGED -->
+                  <textarea class="form-control" rows="6"></textarea>
+                  <button type="button" class="btn btn-danger btn-block btn-lg calcButton">
+                      <span class="glyphicon glyphicon-pencil"    ></span> Draw Diagram
+                  </button>
       </div>
       <div class="btn-group btn-group-justified prevNext">
         <a style="border-right:none;" class="btn btn-default" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>

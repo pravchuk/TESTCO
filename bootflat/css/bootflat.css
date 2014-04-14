@@ -539,7 +539,10 @@ a.thumbnail:hover, a.thumbnail:focus {
     $btn-group-justified
 \*------------------------------------*/
 .btn-group-justified .btn {
+    /*
+    Chukka's Modification
     border-right: none;
+    */
 }
 /*------------------------------------*\
     $input-group-btn

@@ -212,7 +212,7 @@ margin-top:	-6px;
 
 #answerLegend {
 	overflow:scroll;
-	height:250px;
+	height:225px;
 	text-align: center;
 }
 
@@ -243,6 +243,11 @@ margin-top:	-6px;
 }
 
 .prevNext{
-	margin-top: 80px;
+	margin-top: 80px!important;
 	width: 200px;
+	margin: auto;
+}
+
+.form-control{
+	font-weight: bold;
 }
