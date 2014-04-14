@@ -9,8 +9,8 @@ function loadQuestions()
     {// code for IE6, IE5
     xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
     }
-  xmlhttp.onreadystatechange=function()
-    {
+
+    xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
@@ -18,6 +18,7 @@ function loadQuestions()
       document.getElementById("testQuestion").innerHTML=obj.quest;
       }
     }
-  xmlhttp.open("GET","../test.php",true);
+
+  xmlhttp.open("GET","test.txt",true);
   xmlhttp.send();
 }
