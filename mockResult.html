@@ -17,6 +17,7 @@
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="js/index.js"></script> 
+	<script src="js/results.js"></script>
 
 
     <!-- Required CSS Scripts -->
@@ -24,7 +25,8 @@
 
   </head> 
 
-  <body onload="allEvents();"> 
+  <body onload="allEvents();loadResults();"> 
+		
      <div id="header"></div>
 
      <div id="zabody">
@@ -32,14 +34,14 @@
 		<!--place your stuff here--><center>
 		<h2>Mock Test Results</h2><br>
 		<span class="alert alert-info alert-dismissable">
-		    <strong>  Your score in the mock test: 90/195</strong>
+		    <strong id="total">  Your score in the mock test: 90/195</strong>
         </span>
 		<br><br><br>
 		<h3>Question wise split of marks</h3>
             <ul class="list-group">
-              <li class="list-group-item"><span class="badge badge-primary">45/80</span>Multiple Choice Questions</li>
-              <li class="list-group-item"><span class="badge badge-primary">35/80</span>Descriptive Questions</li>
-              <li class="list-group-item"><span class="badge badge-primary">10/35</span>Descriptive Questions with Diagrams</li>              
+              <li class="list-group-item"><span id="mcq" class="badge badge-primary">45/80</span>Multiple Choice Questions</li>
+              <li class="list-group-item"><span id="dq" class="badge badge-primary">35/80</span>Descriptive Questions</li>
+              <li class="list-group-item"><span id="ddq" class="badge badge-primary">10/35</span>Descriptive Questions with Diagrams</li>              
             </ul>
         
 		
