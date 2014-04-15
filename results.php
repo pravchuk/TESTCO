@@ -15,7 +15,8 @@ $collection = $db->mockresult;
 //$collection->insert($item);
   
 // pull a cursor query  
-$aa=array('uname'=>'manisha','mcqs'=>45);
+//$aa=array('uname'=>'manisha','mcqs'=>45);
+$aa=array('name'=>'Arvind');
 $sds=array('_id'=>false);
 $cursor = $collection->find($aa,$sds);
   foreach($cursor as $document) 
