@@ -12,13 +12,17 @@ function loadQuestions()
 
     xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
-      {
-      //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-      var obj = eval ("(" +xmlhttp.responseText+ ")");;
-      document.getElementById("testQuestion").innerHTML=obj.quest;
+      {//document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+      var obj = eval("(" +xmlhttp.responseText+ ")");
+	  console.log(obj);
+      document.getElementById("testQuestion").innerHTML=obj[0].quest;
+	  //document.getElementById("option1").innerHTML=obj[0].opt1;
+	  //document.getElementById("option2").innerHTML=obj[0].opt2;
+	  //document.getElementById("option3").innerHTML=obj[0].opt3;
+	  //document.getElementById("option4").innerHTML=obj[0].opt4;
       }
     }
 
-  xmlhttp.open("GET","test.txt",true);
+  xmlhttp.open("GET","test.php",true);
   xmlhttp.send();
 }
