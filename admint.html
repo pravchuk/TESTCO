@@ -17,7 +17,7 @@
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="js/index.js"></script> 
-
+	<script src="js/profiles.js"></script> 
 	<script>
 	function valpage(theURL){
 		$("#content").load(theURL);
@@ -39,7 +39,7 @@
 
   </head> 
 
-  <body onload="allEvents();"> 
+  <body onload="allEvents(); loadProfiles()"> 
      <div id="header"></div>
 
      <div id="zabody">
@@ -75,8 +75,8 @@
 				</div>
 				
 				<div class="data">
-					<h1>Mansi</h1>
-					<h3>California</h3>
+					<h1 id = "name">Mansi</h1>
+					<h3 id = "place">India</h3>
 					<h4><a href="http://www.myurl.com"</a></h4>
 					<div class="socialMediaLinks">
 				<a href="https://www.facebook.com/mansi.perky" rel="me" target="_blank"><img src="" /></a>
@@ -87,13 +87,13 @@
 			</div>
 			
 			<h1>About Me:</h1>
-			<p>
-			   Age:             19<br>
-			   Education:       Princeton University<br>
-			   Current Employer:Apple Inc,CA<br>
-			   Email:           mansi281194@gmail.com<br>
-			   Degree:          Masters in Computer Science<br>
-			   Projects:        Quantum Computing <br>
+			<p id = "about">
+			   Age:             21<br>
+			   Education:       asdfa University<br>
+			   Current Employer: Inc,CA<br>
+			   Email:           mansi@gmail.com<br>
+			   Degree:          jshfsd qwuaisd tyues<br>
+			   Projects:        askdf usidha <br>
 			   </p>
 		</section>
 		</div>
