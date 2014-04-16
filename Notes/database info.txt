@@ -1,0 +1,14 @@
+database name: testco
+collections:
+	profiles // this is for admin, student, contributor, evaluator profile
+		fields:
+			_id : "admin01 contr01 eval01 stud01"
+			name
+			place
+			about[age, edu, curemp, email, degree, projects]
+	
+	mockresults
+		name
+		mcq
+		dq //descriptive
+		ddq // descriptive with diagrams
