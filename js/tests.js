@@ -26,7 +26,7 @@ function loadQuestions()
       }
     }
 
-  xmlhttp.open("GET","test.txt",true);
+  xmlhttp.open("GET","test.php",true);
   xmlhttp.send();
 }
 
@@ -45,5 +45,3 @@ function nextQuestion(){
 
   openQuestion(qNo);
 }
-
-

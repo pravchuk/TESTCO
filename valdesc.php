@@ -10,9 +10,9 @@ $m = new Mongo("mongodb://$dbhost");
 $db = $m->$dbname;  
   
 // select the collection  
-$collection = $db->studentAns;  
+$collection = $db->questions;  
 //insert a tupple
-$item=array('marksobt'=>'');
+$item=array('validated'=>'no','qtype'=>'desc');
 //$collection->insert($item);
   
 // pull a cursor query  

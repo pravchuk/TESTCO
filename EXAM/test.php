@@ -1,4 +1,6 @@
-<?php  
+<?php
+//$sub = $_GET['sub'];
+//$ca = $_GET['ca'];
 // Config  
 $dbhost = 'localhost';  
 $dbname = 'testco';  
@@ -9,19 +11,24 @@ $m = new Mongo("mongodb://$dbhost");
 $db = $m->$dbname;  
   
 // select the collection  
-$collection = $db->mockresult;  
+$collection = $db->mcq;  
 //insert a tupple
 //$item=array('uname'=>'neo','age'=>28,'profession'=>'hacker');
 //$collection->insert($item);
   
 // pull a cursor query  
-//$aa=array('uname'=>'manisha','mcqs'=>45);
-$aa=array('name'=>'Arvind');
-$sds=array('_id'=>false);
+$aa=array('sub'=>'phy');
+$sds=array('ca'=>false);
 $cursor = $collection->find($aa,$sds);
-  foreach($cursor as $document) 
-  {
-			echo json_encode($document);
+	echo '{ ';
+  foreach($cursor as $document) {
+	$p=array('tag'=>'gravity');
+//	$cursor1 = $collection->find($p,$sds);
+	//	foreach($cursor1 as $document) {
+		{	echo json_encode($document).',';
 			//header('Location:profile.html');			
-} 
-?>   
+		}
+	//	echo ',';
+}
+echo ' }';
+?>  

@@ -1,0 +1,2 @@
+{ "_id" : "pg1", "quest" : "what is the value of g?", "sub" : "phy", "tag" : "gravity", "opt1" : "9.0", "opt2" : "8.6", "opt3" : "9.8", "opt4" : "7.9", "ca" : "3" }
+{ "_id" : "pg2", "quest" : "chukka sucks?", "sub" : "phy", "tag" : "gravity" }

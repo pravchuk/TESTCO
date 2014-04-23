@@ -17,14 +17,14 @@
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="js/index.js"></script> 
-
+	<script src="js/evals.js"></script>
 
     <!-- Required CSS Scripts -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
   </head> 
 
-  <body onload="allEvents();"> 
+  <body onload="allEvents();loadAnswers();"> 
      <div id="header"></div>
 
      <div id="zabody">
@@ -37,11 +37,11 @@
 							<div class="panel">
 								<div class="panel-heading">
 									<h3 class="panel-title">
-										<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Question</a>
+										<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" id="quest">Question</a>
 									</h3>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
-									<div class="panel-body">
+									<div class="panel-body" id="answer">
 										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 									</div>
 								</div>
@@ -50,10 +50,10 @@
 </div>
 <div>
 	<div class="col-md-6">
-						<input type="number"  maxlength="2" size="2" class="form-control" placeholder="Marks Obtained">
+						<input type="number"  maxlength="2" size="2" class="form-control" placeholder="Marks Obtained" id="mark">
 	</div>
 	<div class="col-md-3">
-				<button type="button" class="btn btn-success btn-block">Next</button>
+				<button type="button" class="btn btn-success btn-block" onclick="pushMarks();loadAnswers()">Next</button>
 	</div>
 </div>
 
@@ -65,6 +65,7 @@
 
 
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="bootflat/js/bootstrap.min.js"></script>
+      <script src="bootflat/js/bootstrap.min.js">
+	  </script>
   </body> 
 </html>

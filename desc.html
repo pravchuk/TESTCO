@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <title>TESTCO Template</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Required JS scripts -->
+    <!-- Jquery -->
+     <script src="jquery.js"></script>
+    <!-- Bootstrap -->
+    <link href="bootflat/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
+    <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
+    <script src="js/index.js"></script> 
+	<script src="js/valdesc.js"></script> 
+
+
+    <!-- Required CSS Scripts -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  </head> 
+
+  <body onload="allEvents();loadQuestion();"> 
+     <div id="header"></div>
+
+     <div id="zabody">
+	 <div class="zacontainer">
+		<!--place your stuff here-->
+
+				<h2 class="example-title"> Descriptive Question</h2><br>
+				<div id="ques"><p>Q: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p></div><br>
+				
+				<div id="ans"><p>Ans: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p></div>
+		
+              
+            <br>
+				
+				<button type="button" class="btn btn-success" onclick="pushValid('yes');loadQuestion();" >Validate</button>
+				<button type="button" class="btn btn-success" onclick="pushValid('denied');loadQuestion();" >Do not Validate</button><br><br>	
+				</div>
+				</div>
+			</div>
+	
+	 </div>
+	 </div>
+	<div id="footer"></div>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootflat/js/bootstrap.min.js"></script>
+  </body> 
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head> 
-    <title>Results: Mock Test</title>
+    <title>TESTCO Template</title>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,15 @@
 
     <!--Required JS scripts -->
     <!-- Jquery -->
-     <script src="jquery.js"></script>
+    <script src="jquery.js"></script>
     <!-- Bootstrap -->
     <link href="bootflat/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
-    <script src="js/index.js"></script> 
-	<script src="js/results.js"></script>
+    <script src="js/index.js"></script>
+	<script src="js/valmcq.js"></script>
 
 
     <!-- Required CSS Scripts -->
@@ -25,27 +25,31 @@
 
   </head> 
 
-  <body onload="allEvents();loadResults();"> 
-		
+  <body onload="allEvents();loadQuestion();"> 
      <div id="header"></div>
 
      <div id="zabody">
 	 <div class="zacontainer">
-		<!--place your stuff here--><center>
-		<h2>Mock Test Results</h2><br>
-		<span class="alert alert-info alert-dismissable">
-		    <strong id="total">  Your score in the mock test: 90/195</strong>
-        </span>
-		<br><br><br>
-		<h3>Question wise split of marks</h3>
-            <ul class="list-group">
-              <li class="list-group-item"><span id="mcq" class="badge badge-primary">45/80</span>Multiple Choice Questions</li>
-              <li class="list-group-item"><span id="dq" class="badge badge-primary">35/80</span>Descriptive Questions</li>
-              <li class="list-group-item"><span id="ddq" class="badge badge-primary">10/35</span>Descriptive Questions with Diagrams</li>              
-            </ul>
-        
-		
-			
+		<!--place your stuff here-->
+
+				<h2 class="example-title">Multiple Choice Question</h2><br>
+				<div id="mcq"><p>No more mcqs</p></div><br>
+				<form action="">
+<input type="radio" name="options" value="A" id="opt1"> Option 1<br>
+<input type="radio" name="options" value="B" id="opt2"> Option 2<br>
+<input type="radio" name="options" value="C" id="opt3"> Option 3<br>
+<input type="radio" name="options" value="D" id="opt4"> Option 4<br>
+</form>
+<br>
+				
+				
+				
+				<button type="button" class="btn btn-success" onclick="pushValid('yes');loadQuestion();" >Validate</button>
+				<button type="button" class="btn btn-success" onclick="pushValid('denied');loadQuestion();" >Do not Validate</button><br><br>	
+				</div>
+				</div>
+			</div>
+	
 	 </div>
 	 </div>
 	<div id="footer"></div>
