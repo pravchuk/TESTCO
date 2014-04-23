@@ -1,6 +1,5 @@
 <?php
-$sub = $_GET['sub'];
-$ca = $_GET['ca'];
+$qNo = $_GET['qNo'];
 // Config  
 $dbhost = 'localhost';  
 $dbname = 'testco';  
