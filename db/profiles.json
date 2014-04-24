@@ -1,0 +1,1 @@
+{ "_id" : "admin01", "name" : "Manisha Manohar", "place" : "California", "image" : "/TESTCO/authors\\7.png", "about" : { "age" : 21, "edu" : "PESIT", "curemp" : "Cisco", "email" : "manisha@gmail.com", "degree" : "Bachelors of Computer Science", "projects" : "Covert VM Network" } }
