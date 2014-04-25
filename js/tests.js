@@ -1,5 +1,6 @@
 var questObj;
-
+var answers = new Array ();
+i=0;
 function loadQuestions()
 {
   var xmlhttp;
@@ -18,11 +19,7 @@ function loadQuestions()
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
       questObj = eval(xmlhttp.responseText);
       console.log(questObj);
-      document.getElementById("testQuestion").innerHTML=questObj[0].quest;
-      document.getElementById('option1').innerHTML = questObj[0].opt1;
-      document.getElementById('option2').innerHTML = questObj[0].opt2;
-      document.getElementById('option3').innerHTML = questObj[0].opt3;
-      document.getElementById('option4').innerHTML = questObj[0].opt4;
+      openQuestion(1);
       }
     }
 
@@ -32,6 +29,9 @@ function loadQuestions()
 
 function openQuestion(qNo)
 {
+  document.getElementById('qNumber').innerHTML=qNo;
+	val="answer"+qNo;
+    idn=document.getElementById(val);
   document.getElementById("testQuestion").innerHTML=questObj[qNo].quest;
   document.getElementById('option1').innerHTML = questObj[qNo].opt1;
   document.getElementById('option2').innerHTML = questObj[qNo].opt2;
@@ -39,9 +39,34 @@ function openQuestion(qNo)
   document.getElementById('option4').innerHTML = questObj[qNo].opt4;
 }
 
-function nextQuestion(){
+function nextQuestion()
+{
+	var qNo = parseInt(document.getElementById('qNumber').innerHTML);
+	if(document.getElementById('option1').checked || document.getElementById('option2').checked ||document.getElementById('option3').checked || document.getElementById('option4').checked)
+	{
+				//answers['qNo']=
+				idn.setAttribute("class","btn btn-success");
+				
+				
+	}
+	else
+	{
+			//redundant, not needed else. put cos checked comnig as undefined.
+			idn.setAttribute("class","btn btn-normal");
+	}
+  
+  //check limits
+  
+  qNo+=1;
+  document.getElementById('qNumber').innerHTML=qNo;
+
+  openQuestion(qNo);
+}
+
+function prevQuestion(){
   var qNo = parseInt(document.getElementById('qNumber').innerHTML);
   //check limits
-
+   qNo-=1;
+  document.getElementById('qNumber').innerHTML=qNo;
   openQuestion(qNo);
 }

@@ -20,7 +20,7 @@ $collection = $db->mcq;
 $aa=array('sub'=>'phy');
 $sds=array('ca'=>false);
 $cursor = $collection->find($aa,$sds);
-	echo '{ ';
+	echo '[ {},';
   foreach($cursor as $document) {
 	$p=array('tag'=>'gravity');
 //	$cursor1 = $collection->find($p,$sds);
@@ -30,5 +30,5 @@ $cursor = $collection->find($aa,$sds);
 		}
 	//	echo ',';
 }
-echo ' }';
+echo ' ]';
 ?>  

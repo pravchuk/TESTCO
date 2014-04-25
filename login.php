@@ -11,7 +11,6 @@ $db = $m->$dbname;
 // select the collection  
 $collection = $db->logins;  
 //insert a tupple
-$item=array('uname'=>'neo','age'=>28,'profession'=>'hacker');
 //$collection->insert($item);
   
 // pull a cursor query  
