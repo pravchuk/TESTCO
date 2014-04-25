@@ -11,8 +11,15 @@ $m = new Mongo("mongodb://$dbhost");
 $db = $m->$dbname;  
   
 // select the collection  
+<<<<<<< HEAD
+$collection = $db->logins;  
+//insert a tupple
+//$collection->insert($item);
+  
+=======
 $collection = $db->loginpage;
 
+>>>>>>> ce6c58fc787aea03c22a90d413af8b44d4fca5e5
 // pull a cursor query  
 $aa=array('uname'=>$name);
 $sds=array('_id'=>false);
