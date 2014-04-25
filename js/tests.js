@@ -29,6 +29,7 @@ function loadQuestions()
 
 function openQuestion(qNo)
 {
+  changeColor();
   document.getElementById('qNumber').innerHTML=qNo;
 	val="answer"+qNo;
     idn=document.getElementById(val);
@@ -38,25 +39,36 @@ function openQuestion(qNo)
   document.getElementById('option3').innerHTML = questObj[qNo].opt3;
   document.getElementById('option4').innerHTML = questObj[qNo].opt4;
 }
-
-function nextQuestion()
+function changeColor()
 {
-	var qNo = parseInt(document.getElementById('qNumber').innerHTML);
-	if(document.getElementById('option1').checked || document.getElementById('option2').checked ||document.getElementById('option3').checked || document.getElementById('option4').checked)
+	if(document.getElementById('opt1').checked) 
 	{
 				//answers['qNo']=
 				idn.setAttribute("class","btn btn-success");
-				
+				document.getElementById('opt1').checked=false;
 				
 	}
-	else
+	else if(document.getElementById('opt2').checked)
 	{
-			//redundant, not needed else. put cos checked comnig as undefined.
-			idn.setAttribute("class","btn btn-normal");
+		idn.setAttribute("class","btn btn-success");
+		document.getElementById('opt2').checked=false;
+	}
+	else if(document.getElementById('opt3').checked)
+	{
+		idn.setAttribute("class","btn btn-success");
+		document.getElementById('opt3').checked=false;
+	}
+	else if(document.getElementById('opt4').checked)
+	{
+		idn.setAttribute("class","btn btn-success");
+		document.getElementById('opt4').checked=false;
 	}
   
-  //check limits
-  
+}
+function nextQuestion()
+{
+	var qNo = parseInt(document.getElementById('qNumber').innerHTML);
+  //check limits  
   qNo+=1;
   document.getElementById('qNumber').innerHTML=qNo;
 

@@ -3,7 +3,7 @@
 $dbhost = 'localhost';  
 $dbname = 'testco';  
 
-$name=$_POST["username"];
+$username=$_POST["username"];
 $password=$_POST["password"];
 $url = $_POST["url"];
 // Connect to test database  
@@ -17,7 +17,7 @@ $collection = $db->logins;
 //$collection->insert($item);
 
 // pull a cursor query  
-$aa=array('uname'=>$name);
+$aa=array('uname'=>$username);
 $sds=array('_id'=>false);
 $cursor = $collection->find($aa,$sds);
   foreach($cursor as $document) {
