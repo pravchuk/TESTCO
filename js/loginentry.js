@@ -1,4 +1,4 @@
-function loadProfiles()
+function loginentry()
 {
   var xmlhttp;
   if (window.XMLHttpRequest)

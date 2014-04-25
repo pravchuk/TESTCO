@@ -16,6 +16,7 @@
     <link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
+	<script src="js/profiles.js"></script>
     <script src="js/index.js"></script> 
 
 
@@ -24,7 +25,7 @@
 
   </head> 
 
-  <body onload="allEvents();"> 
+  <body onload="allEvents(); loadProfiles()"> 
      <div id="header"></div>
 
      <div id="zabody">
@@ -48,7 +49,7 @@
 		<section id="left">
 			<div id="userStats" class="clearfix">
 				<div class="pic">
-					<a href="#"><img src="img1/IMG-20131104-WA0006.jpg" height="150" /></a>
+					<a href="#"><img id = "image" src="authors\defaultprofileimage.png" height="150" /></a>
 				</div>
 				
 				<div class="data">
@@ -60,9 +61,6 @@
 						 
 					</div>
 					<div class="sep"></div>
-					
-						<p>Member since <strong>5/1/2014</strong></p>
-					
 				</div>
 			</div>
 			
