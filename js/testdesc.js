@@ -5,7 +5,6 @@ prevqNo=0;
 function loadQuestions()
 {
   var xmlhttp;
-  var prevqNo= 1;
   if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari
     xmlhttp=new XMLHttpRequest();
@@ -43,7 +42,7 @@ function loadQuestions()
       }
     }
 
-  xmlhttp.open("GET","test.php",true);
+  xmlhttp.open("GET","testdesc.php",true);
   xmlhttp.send();
 }
 
@@ -57,10 +56,7 @@ function openQuestion(qNo)
 	if(answers[qNo]!=undefined)
 		markAnswer(qNo);
   document.getElementById("testQuestion").innerHTML=questObj[qNo].quest;
-  document.getElementById('option1').innerHTML = questObj[qNo].opt1;
-  document.getElementById('option2').innerHTML = questObj[qNo].opt2;
-  document.getElementById('option3').innerHTML = questObj[qNo].opt3;
-  document.getElementById('option4').innerHTML = questObj[qNo].opt4;
+  prevqNo=qNo;
   }
 }
 function markAnswer(qNo)
@@ -115,13 +111,3 @@ function prevQuestion(){
    qNo-=1;
   openQuestion(qNo);
 }
-
- $(function() {
-    $('#simple_sketch').sketch();
-  });
-
-//  $('#upload').click(function () {
-//     $.post('/upload_image.php', { data: $('#myCanvas').get(0).toDataURL() }, function () {
-//          alert('uploaded');
-//     });
-// });

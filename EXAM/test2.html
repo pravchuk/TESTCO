@@ -23,14 +23,14 @@
     <link href="../bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="../bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="../js/index.js"></script> 
-
+    
     <!-- Drawing -->
     <script src="../js/sketch/sketch.min.js"></script> 
 
     <!--User Generated-->
     <script src="../js/tests.js"></script>
 
-
+	<script src="../js/testdesc.js"></script>
 
     <!-- Required CSS Scripts -->
     <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -71,8 +71,8 @@
                   </button>
       </div>
       <div class="btn-group btn-group-justified prevNext">
-        <a style="border-right:none;" class="btn btn-default" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
-        <a class="btn btn-default" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Next</a>
+        <a style="border-right:none;" class="btn btn-default" role="button" onclick="prevQuestion();"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
+        <a class="btn btn-default" role="button" onclick="nextQuestion()"><span class="glyphicon glyphicon-chevron-right"></span> Next</a>
     </div>
     </div>
     <div class="rightPart col-md-3">
