@@ -17,6 +17,7 @@
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="js/index.js"></script> 
+	<script src="js/contrDesc.js"></script> 
 
 
     <!-- Required CSS Scripts -->
@@ -40,6 +41,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<input type="text" id="mcqQs" class="form-control" placeholder="Enter your question here">
+						<input type="text" id="testid" class="form-control" placeholder="Enter test in which the question belongs">
 				    </div>					
 				</div><br>
 				<div class="row">
@@ -75,11 +77,11 @@
 				</div><br>
 				<div class="row">
 					<div class="col-md-6">
-						<input type="text" id="mcqAns" class="form-control" placeholder="Enter relevent tag(s) seperated by spaces">
+						<input type="text" id="tags" class="form-control" placeholder="Enter relevent tag(s) seperated by spaces">
 				    </div>					
 				</div><br>
 				
-				<button type="button" class="btn btn-success" onclick="mcq();" >Submit for Validation</button><br><br>		
+				<button type="button" class="btn btn-success" onclick="pushMcq()" >Submit for Validation</button><br><br>		
 				</div>
 				</div>
 			</div>
