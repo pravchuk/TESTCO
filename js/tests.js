@@ -48,19 +48,7 @@ function loadQuestions()
 
 function openQuestion(qNo)
 {
-<<<<<<< HEAD
   if(qNo>0){
-    changeColor();
-    document.getElementById('qNumber').innerHTML=qNo;
-  	val="answer"+qNo;
-    idn=document.getElementById(val);
-    document.getElementById("testQuestion").innerHTML=questObj[qNo].quest;
-    document.getElementById('option1').innerHTML = questObj[qNo].opt1;
-    document.getElementById('option2').innerHTML = questObj[qNo].opt2;
-    document.getElementById('option3').innerHTML = questObj[qNo].opt3;
-    document.getElementById('option4').innerHTML = questObj[qNo].opt4;
-  }
-=======
   changeColor(prevqNo);
   document.getElementById('qNumber').innerHTML=qNo;
 	val="answer"+qNo;
@@ -73,6 +61,7 @@ function openQuestion(qNo)
   document.getElementById('option3').innerHTML = questObj[qNo].opt3;
   document.getElementById('option4').innerHTML = questObj[qNo].opt4;
   prevqNo=qNo;
+  }
 >>>>>>> 9eace265ae4de66373075abe589810c1fe83bbbe
 }
 function markAnswer(qNo)
