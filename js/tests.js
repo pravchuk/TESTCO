@@ -20,6 +20,24 @@ function loadQuestions()
       questObj = eval(xmlhttp.responseText);
       console.log(questObj);
       openQuestion(1);
+      for (var i=1; i<=Object.keys(questObj).length; i++)
+      {
+        var legend = document.getElementById('answerLegend');
+
+        //Creating the below node
+        //"<button class='btn btn-normal' id='answer1' onclick='openQuestion(1);'>01.</button>";
+        var node=document.createElement("button");
+        if(i<10){
+          var textnode=document.createTextNode("0"+String.valueOf(i));
+        }else{
+          var textnode=document.createTextNode(String.valueOf(i));
+        }
+        node.appendChild(textnode);
+        node.setAttribute("class", "btn btn-normal");
+        node.setAttribute("id", "answer"+String.valueOf(i));
+        node.setAttribute("onclick", "openQuestion("+String.valueOf(i)+");");
+        document.getElementById("myList").appendChild(node);
+      }
       }
     }
 
@@ -29,15 +47,17 @@ function loadQuestions()
 
 function openQuestion(qNo)
 {
-  changeColor();
-  document.getElementById('qNumber').innerHTML=qNo;
-	val="answer"+qNo;
+  if(qNo>0){
+    changeColor();
+    document.getElementById('qNumber').innerHTML=qNo;
+  	val="answer"+qNo;
     idn=document.getElementById(val);
-  document.getElementById("testQuestion").innerHTML=questObj[qNo].quest;
-  document.getElementById('option1').innerHTML = questObj[qNo].opt1;
-  document.getElementById('option2').innerHTML = questObj[qNo].opt2;
-  document.getElementById('option3').innerHTML = questObj[qNo].opt3;
-  document.getElementById('option4').innerHTML = questObj[qNo].opt4;
+    document.getElementById("testQuestion").innerHTML=questObj[qNo].quest;
+    document.getElementById('option1').innerHTML = questObj[qNo].opt1;
+    document.getElementById('option2').innerHTML = questObj[qNo].opt2;
+    document.getElementById('option3').innerHTML = questObj[qNo].opt3;
+    document.getElementById('option4').innerHTML = questObj[qNo].opt4;
+  }
 }
 function changeColor()
 {
@@ -70,7 +90,6 @@ function nextQuestion()
 	var qNo = parseInt(document.getElementById('qNumber').innerHTML);
   //check limits  
   qNo+=1;
-  document.getElementById('qNumber').innerHTML=qNo;
 
   openQuestion(qNo);
 }
@@ -79,6 +98,5 @@ function prevQuestion(){
   var qNo = parseInt(document.getElementById('qNumber').innerHTML);
   //check limits
    qNo-=1;
-  document.getElementById('qNumber').innerHTML=qNo;
   openQuestion(qNo);
 }
