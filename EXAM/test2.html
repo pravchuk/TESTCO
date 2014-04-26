@@ -23,7 +23,7 @@
 
   </head> 
 
-  <body onload="allEvents();"> 
+  <body onload="allEvents();loadQuestions();"> 
     <div class="testHeader">
       <h1 class="col-md-8">TESTCO</h1>
       <div class="timeAndStuff col-md-4">
@@ -35,7 +35,7 @@
     <div class="testBody">
       <div class="testArea col-md-9">
         <!--Question-->
-        <h3 id="testQuestion">1. Explaing why you like lemonaide.</h3>
+        <h3><span id="qNumber">1</span>.<span id="testQuestion">Explaing why you like lemonaide.</span></h3>
 
         <!--Answer-->
         <div id="testAnswer">
@@ -54,7 +54,7 @@
       <div id="answerLegend">
         <button class="btn btn-normal" id="answer1">01.</button>
         <!-- Use a Loop to fill in these numbers -->
-        <button class="btn btn-warning" id="answer2">02.</button>
+        <button class="btn btn-normal" id="answer2">02.</button>
         <button class="btn btn-normal" id="answer3">03.</button>
         <br/>
         <button class="btn btn-normal" id="answer4">04.</button>
@@ -63,7 +63,7 @@
         <br/>
         <button class="btn btn-normal" id="answer7">07.</button>
         <button class="btn btn-normal" id="answer8">08.</button>
-        <button class="btn btn-success" id="answer9">09.</button>
+        <button class="btn btn-normal" id="answer9">09.</button>
         <br/>
         <button class="btn btn-success" id="answer10">10.</button>
         <button class="btn btn-success" id="answer11">11.</button>

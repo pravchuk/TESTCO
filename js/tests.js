@@ -116,6 +116,7 @@ function prevQuestion(){
   openQuestion(qNo);
 }
 
-function
+/*function
     $('#simple_sketch').sketch();
   });
+*/

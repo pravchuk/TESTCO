@@ -48,13 +48,14 @@ function loadQuestions()
 
 function openQuestion(qNo)
 {
+
   if(qNo>0){
   changeColor(prevqNo);
   document.getElementById('qNumber').innerHTML=qNo;
-	val="answer"+qNo;
-    idn=document.getElementById(val);
-	if(answers[qNo]!=undefined)
-		markAnswer(qNo);
+  //markAnswer(qNo);
+ 
+  //console.log(idn.innerHTML);
+  console.log(questObj[qNo].quest);
   document.getElementById("testQuestion").innerHTML=questObj[qNo].quest;
   prevqNo=qNo;
   }
@@ -63,12 +64,16 @@ function markAnswer(qNo)
 {
 	console.log(answers);
 	var radiobtn='opt'+answers[qNo];
-	document.getElementById(radiobtn).checked=true;
+	//document.getElementById(radiobtn).checked=true;
 }
 function changeColor(qNo)
 {
 	console.log(answers);
 		console.log(qNo);
+	//val="answer"+qNo;
+//	idn=document.getElementById(val);
+	//idn.setAttribute("class","btn btn-success");
+	/*
 	if(document.getElementById('opt1').checked) 
 	{
 		answers[qNo]=1;
@@ -94,7 +99,7 @@ function changeColor(qNo)
 		idn.setAttribute("class","btn btn-success");
 		document.getElementById('opt4').checked=false;
 	}
-  
+  */
 }
 function nextQuestion()
 {
