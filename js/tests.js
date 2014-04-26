@@ -116,7 +116,19 @@ function prevQuestion(){
   openQuestion(qNo);
 }
 
+<<<<<<< HEAD
 /*function
     $('#simple_sketch').sketch();
   });
 */
+=======
+ $(function() {
+    $('#simple_sketch').sketch();
+  });
+
+//  $('#upload').click(function () {
+//     $.post('/upload_image.php', { data: $('#myCanvas').get(0).toDataURL() }, function () {
+//          alert('uploaded');
+//     });
+// });
+>>>>>>> 3d3156230d1083cc0d403b8a0aae11b089cb4d55
