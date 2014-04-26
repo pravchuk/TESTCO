@@ -116,6 +116,12 @@ function prevQuestion(){
   openQuestion(qNo);
 }
 
-function
+ $(function() {
     $('#simple_sketch').sketch();
   });
+
+ $('#upload').click(function () {
+    $.post('/upload_image.php', { data: $('#myCanvas').get(0).toDataURL() }, function () {
+         alert('uploaded');
+    });
+});
