@@ -14,7 +14,10 @@ function loadResults()
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-      var obj = eval ("(" +xmlhttp.responseText+ ")");
+    var obj = eval ("(" +xmlhttp.responseText+ ")");
+	
+	
+		//console.log(xmlhttp.responseText);
 	  //section wise scores
       document.getElementById("mcq").innerHTML=obj.mcq + "/80";
 	  document.getElementById("dq").innerHTML=obj.dq + "/80";
@@ -31,6 +34,6 @@ function loadResults()
       }
     }
 
-  xmlhttp.open("POST","results.txt",true);
+  xmlhttp.open("POST","results2.php",true);
   xmlhttp.send();
 }

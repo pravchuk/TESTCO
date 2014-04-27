@@ -58,5 +58,7 @@ foreach($cursor as $doc)
 		header('Location:studentpro.html');
 	}
 }
+	echo "erroe";
+	//header('Location:login.html');
  
 ?>   

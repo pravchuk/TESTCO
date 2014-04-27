@@ -125,7 +125,11 @@ function prevQuestion(){
    qNo-=1;
   openQuestion(qNo);
 }
-
+function results()
+{
+	//$_SESSION['result']=res;
+	 window.open("http://localhost/TESTCO/mockResult.html","_self");
+}
 function complete()
 {
 	
@@ -144,6 +148,7 @@ function complete()
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
 		console.log(xmlhttp.responseText);
+		res=xmlhttp.responseText;
       }
     //}
 	}
@@ -157,7 +162,7 @@ function complete()
   xmlhttp.open("POST","http://localhost/Testco/results.php",true);
   xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   xmlhttp.send(str);
- window.open("mockResult.html",_self);
+ 
 }
 
 /*function
