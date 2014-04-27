@@ -17,14 +17,14 @@
     <link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
     <link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
     <script src="js/index.js"></script> 
-
+	<script src="js/profiles.js"></script>
 
     <!-- Required CSS Scripts -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
   </head> 
 
-  <body onload="allEvents();"> 
+  <body onload="allEvents(); loadProfiles()"> 
      <div id="header"></div>
 
      <div id="zabody">
@@ -52,8 +52,8 @@
 				</div>
 				
 				<div class="data">
-					<h1>Mansi</h1>
-					<h3>Bangalore, India</h3>
+					<h1 id = "name">Mansi</h1>
+					<h3 id = "place">Bangalore, India</h3>
 					<h4><a href="http://www.myurl.com"></a></h4>
 					
 					<div class="socialMediaLinks">
@@ -65,7 +65,7 @@
 			</div>
 			
 			<h1>About Me:</h1>
-			<p>
+			<p id = "about">
 			   Age:             19<br>
 			   Education:       PESU<br>
 			   Current Employer:Delloite<br>
