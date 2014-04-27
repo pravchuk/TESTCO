@@ -1,4 +1,4 @@
-{ "_id" : "pe1", "quest" : "What is the unit of Energy?", "sub" : "phy", "tag" : "energy", "opt1" : "J", "opt2" : "K", "opt3" : "M", "opt4" : "N", "ca" : "1" }
-{ "_id" : "pg1", "quest" : "what is the value of g?", "sub" : "phy", "tag" : "gravity", "opt1" : "9.0", "opt2" : "8.6", "opt3" : "9.8", "opt4" : "7.9", "ca" : "3" }
-{ "_id" : "pm1", "quest" : "A bar magnet is equivalent to _______.", "sub" : "phy", "tag" : "energy", "opt1" : " solenoid carrying current", "opt2" : "circular coil carrying current", "opt3" : "toroid carrying current ", "opt4" : "straight conductor carrying current", "ca" : "1" }
-{ "_id" : "ps1", "quest" : "What is the value of escape velocity?", "sub" : "phy", "tag" : "speed", "opt1" : "10.5", "opt2" : "11.2", "opt3" : "13.5", "opt4" : "12.3", "ca" : "2" }
+{ "_id" : "pe1", "quest" : "What is the unit of Energy?", "sub" : "phy", "tag" : "energy", "opt1" : "J", "opt2" : "K", "opt3" : "M", "opt4" : "N", "ca" : "1", "qNo" : 1 }
+{ "_id" : "pg1", "quest" : "what is the value of g?", "sub" : "phy", "tag" : "gravity", "opt1" : "9.0", "opt2" : "8.6", "opt3" : "9.8", "opt4" : "7.9", "ca" : "3", "qNo" : 2 }
+{ "_id" : "pm1", "quest" : "A bar magnet is equivalent to _______.", "sub" : "phy", "tag" : "energy", "opt1" : " solenoid carrying current", "opt2" : "circular coil carrying current", "opt3" : "toroid carrying current ", "opt4" : "straight conductor carrying current", "ca" : "1", "qNo" : 3 }
+{ "_id" : "ps1", "quest" : "What is the value of escape velocity?", "sub" : "phy", "tag" : "speed", "opt1" : "10.5", "opt2" : "11.2", "opt3" : "13.5", "opt4" : "12.3", "ca" : "2", "qNo" : 4 }

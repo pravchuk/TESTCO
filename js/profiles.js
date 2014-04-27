@@ -14,7 +14,8 @@ function loadProfiles()
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-      var obj = eval ("(" +xmlhttp.responseText+ ")");
+      var obj = eval("(" +xmlhttp.responseText+ ")");
+	  //console.log(obj.name);
 	 // document.getElementByID("image").innerHTML = obj.image;
 	  document.getElementById("name").innerHTML = obj.name;
 	  document.getElementById("place").innerHTML = obj.place;

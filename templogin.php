@@ -15,7 +15,7 @@ $db = $m->$dbname;
   
 // select the collection  
 
-$collection = $db->logins;  
+$collection = $db->loginpage;  
 
 
 // pull a cursor query
@@ -35,42 +35,28 @@ foreach($cursor as $doc)
 	{
 		$_SESSION['username']=$username;
 	}
-	header('Location:studentpro.html');
-}
-/*else
-{
-  	//go to login page
-  	header('Location:login.html');
-}
-*/
-  /*foreach($cursor as $document) {
-
-  	//checking if cookie exists
-  	if($_COOKIE['sessionid']){
-  		$d = array('sessionid'=>$_COOKIE['sessionid']);
-  		$cursor1 = $collection->find($d,$sds);
-
-  	}*/
-  /*	else{
-		$p=array('pass'=>$password,'uname'=>$name);
-		$cursor1 = $collection->find($p,$sds);
-
-		foreach($cursor1 as $doc) {
-			echo json_encode($doc);
-		
-			$mapassword = 'chukkaisgreat';
-			$mysession = md5($username.$password.$mapassword);
-			setcookie('sessionid',$mysession);
-			
-			$newdata = array('$set' => array("sessionid" => $mysession));
-			$collection->update(array("uname" => $username), $newdata);
-
-			// $url="profiles.php?username=".$name;
-
-			// header('Location:profiles.php?username='.$name);
-			
-		}
+	$redir=explode('_', $username);//$username.split("_");
+	echo ($redir);
+	if($redir[1]=='admin')
+	{
+		header('Location:admint.html');
 	}
-	*/
+	else if($redir[1]=='eval')
+	{
+		header('Location:evalpro.html');
+	}
+	else if($redir[1]=='valid')
+	{
+		header('Location:val.html');
+	}
+	else if($redir[1]=='contri')
+	{
+		header('Location:contripro.html');
+	}
+	else
+	{
+		header('Location:studentpro.html');
+	}
+}
  
 ?>   

@@ -31,6 +31,6 @@ function loadResults()
       }
     }
 
-  xmlhttp.open("GET","results.php",true);
+  xmlhttp.open("POST","results.txt",true);
   xmlhttp.send();
 }

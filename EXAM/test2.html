@@ -54,7 +54,7 @@
         <!--Answer-->
         <div id="testAnswer">
                   <!-- ONLY PART CHANGED -->
-                  <textarea class="form-control" rows="6"></textarea>
+                  <textarea class="form-control" rows="6" id="textans"></textarea>
                   
                   <!-- modal content -->
                   <div id="basic-modal-content">
@@ -77,42 +77,31 @@
     </div>
     <div class="rightPart col-md-3">
       <div id="answerLegend">
-        <button class="btn btn-normal" id="answer1">01.</button>
+       <button class="btn btn-normal" id="answer1" onclick="openQuestion(1);">01.</button>
         <!-- Use a Loop to fill in these numbers -->
-        <button class="btn btn-normal" id="answer2">02.</button>
-        <button class="btn btn-normal" id="answer3">03.</button>
+        <button class="btn btn-normal" id="answer2" onclick="openQuestion(2)">02.</button>
+        <button class="btn btn-normal" id="answer3" onclick="openQuestion(3)">03.</button>
         <br/>
-        <button class="btn btn-normal" id="answer4">04.</button>
-        <button class="btn btn-normal" id="answer5">05.</button>
-        <button class="btn btn-normal" id="answer6">06.</button>
+        <button class="btn btn-normal" id="answer4" onclick="openQuestion(4)">04.</button>
+        <button class="btn btn-normal" id="answer5" onclick="openQuestion(5)">05.</button>
+        <button class="btn btn-normal" id="answer6" onclick="openQuestion(6)">06.</button>
         <br/>
-        <button class="btn btn-normal" id="answer7">07.</button>
-        <button class="btn btn-normal" id="answer8">08.</button>
-        <button class="btn btn-normal" id="answer9">09.</button>
+        <button class="btn btn-normal" id="answer7" onclick="openQuestion(7)">07.</button>
+        <button class="btn btn-normal" id="answer8" onclick="openQuestion(8)">08.</button>
+        <button class="btn btn-normal" id="answer9" onclick="openQuestion(9)">09.</button>
         <br/>
-        <button class="btn btn-success" id="answer10">10.</button>
-        <button class="btn btn-success" id="answer11">11.</button>
-        <button class="btn btn-success" id="answer12">12.</button>
+        <button class="btn btn-normal" id="answer10">10.</button>
+        <button class="btn btn-normal" id="answer11">11.</button>
+        <button class="btn btn-normal" id="answer12">12.</button>
         <br/>
-        <button class="btn btn-success" id="answer10">10.</button>
-        <button class="btn btn-success" id="answer11">11.</button>
-        <button class="btn btn-success" id="answer12">12.</button>
+        <button class="btn btn-normal" id="answer10">10.</button>
+        <button class="btn btn-normal" id="answer11">11.</button>
+        <button class="btn btn-normal" id="answer12">12.</button>
         <br/>
-        <button class="btn btn-success" id="answer10">10.</button>
-        <button class="btn btn-success" id="answer11">11.</button>
-        <button class="btn btn-success" id="answer12">12.</button>
+        <button class="btn btn-normal" id="answer10">10.</button>
+        <button class="btn btn-normal" id="answer11">11.</button>
+        <button class="btn btn-normal" id="answer12">12.</button>
         <br/>
-        <button class="btn btn-success" id="answer10">10.</button>
-        <button class="btn btn-success" id="answer11">11.</button>
-        <button class="btn btn-success" id="answer12">12.</button>
-        <br/>
-        <button class="btn btn-success" id="answer10">10.</button>
-        <button class="btn btn-success" id="answer11">11.</button>
-        <button class="btn btn-success" id="answer12">12.</button>
-        <br/>
-        <button class="btn btn-success" id="answer10">10.</button>
-        <button class="btn btn-success" id="answer11">11.</button>
-        <button class="btn btn-success" id="answer12">12.</button>
       </div>
       <button type="button" class="btn btn-info btn-block btn-lg calcButton">
         <span class="glyphicon glyphicon-sound-5-1"></span> Calculator
