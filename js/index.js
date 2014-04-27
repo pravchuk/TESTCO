@@ -1,7 +1,7 @@
 //ALL THE FUNCTION
 
 function bodyLoaded(){
-	$("#header").load("header.html");
+	$("#header").load("indexHeader.html");
 	$("#footer").load("footer.html");
 }
 
