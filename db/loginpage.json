@@ -1,1 +1,3 @@
+{ "_id" : "admin01", "uname" : "manisha_admin", "pass" : "password", "email" : "manisha@gmail.com" }
+{ "_id" : "admin02", "uname" : "rashmi_admin", "pass" : "password", "email" : "rashmi@gmail.com" }
 { "_id" : { "$oid" : "5344b812d7227aafdb2cd61b" }, "uname" : "abc", "pass" : "123", "email" : "rash@xyz.com" }
