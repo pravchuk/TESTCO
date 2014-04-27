@@ -90,6 +90,10 @@ body{
  	color: white;
  }
 
+ .section-third{
+	background: #000;
+}
+
 .section-third h2{
 	position:relative;
  	margin:0 auto;

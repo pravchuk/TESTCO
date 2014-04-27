@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+ 
+		<title>TestCo Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Required JS scripts -->
+		<!-- Jquery -->
+		<script src="jquery.js"></script>
+		<!-- Bootstrap -->
+		<link href="bootflat/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="bootflat/css/font-awesome.min.css" rel="stylesheet" media="screen">
+		<link href="bootflat/css/bootflat.css" rel="stylesheet" media="screen">
+		<link href="bootflat/css/bootflat-extensions.css" rel="stylesheet" media="screen">
+		<link href="bootflat/css/bootflat-square.css" rel="stylesheet" media="screen">
+		<script src="js/index.js"></script> 
+
+
+    <!-- Required CSS Scripts -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  </head> 
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+		
+    </head>
+    <body>
+		<div id="header"></div>
+        <div class="container">
+		<div class="alert alert-danger">
+              <strong>Sorry, it looks like your username or password is entered incorrectly.</strong>
+            </div>
+			
+            <section>				
+				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="templogin.php" method="POST" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" /> 
+								</p>
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="#toregister" class="to_register">Join us</a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your name</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername007" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysuperemail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="dob" class="youdob" data-icon="d">Your date of birth</label>
+                                    <input id="dobsignup" name="dobsignup" required="required" type="date" placeholder="mm/dd/yyyy"/>
+                                </p>
+                                <p> 
+                                    <label for="verificationdoc" class="youverification" data-icon="p">Please attach a document to verify your age proof </label>
+                                    <input id="verificationdocsignup" name="verificationdocsignup" required="required" type="file" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+		<div id="footer"></div>
+	</body>
+</html>
