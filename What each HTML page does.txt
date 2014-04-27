@@ -1,0 +1,73 @@
+All HTML pages - 
+
+about - when the about us button is clicked in the header, this page opens.
+
+admint - the homepage of the admin
+
+basic_modal - needed for drawing the canvas, you don't need to use it anywhere
+
+contributor - it's the contributor's homepage, gives the choice of what type of question the contributor wants to add 
+
+contrilist - when the admin clicks on the contributor button on admint page, this page loads. Gives list of contributors
+
+contripro - profile of the contributor
+
+desc - sample page for the validator to see when a descriptive question is given to him to validate
+
+descContributor - when the contributor needs to add a descriptive question, this is the page that gets loaded
+
+descWithDiagram - when the contributor needs to add a descriptive question with diagram, this is the page that gets loaded
+
+evalpro - profile of the evaluator
+
+evalspage - when an evaluator needs to evaluate a question, this page loads
+
+evaluatorprof - profile of the evaluator
+
+evalulist - similar to contrilist, but for evaluators
+
+footer - the footer of every page in the testco
+
+header - the header bar of every page, except the first page
+
+index - the homepage, where the option of logging in is provided
+
+indexHeader - since the index needs a different header (option to login), you need a different bar. so this page takes care of that
+
+login - the page to login
+
+
+mcq - similar to desc, but for mcqs
+
+mcqContributor - when a contributor wants to contribute an MCQ, this page gets loaded
+mockResult - this is the page that displays the result of a mock test
+
+signin - not required
+
+studentpro - profile of the student
+
+studlist - similar to contrilist, but for students
+
+val - profile of the validator
+
+valilist - similar to contrilist, but for validators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
