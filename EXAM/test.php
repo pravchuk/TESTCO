@@ -17,12 +17,12 @@ $collection = $db->mcq;
 //$collection->insert($item);
   
 // pull a cursor query  
-$aa=array('sub'=>'phy');
+$aa=array();//'sub'=>'phy','sub'=>'chem','sub'=>'math');
 $sds=array('ca'=>false);
 $cursor = $collection->find($aa,$sds);
 	echo '[ {},';
   foreach($cursor as $document) {
-	$p=array('tag'=>'gravity');
+	//$p=array('tag'=>'gravity');
 //	$cursor1 = $collection->find($p,$sds);
 	//	foreach($cursor1 as $document) {
 		{	echo json_encode($document).',';

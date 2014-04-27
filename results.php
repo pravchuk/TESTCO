@@ -53,7 +53,7 @@ for ($i =1; $i < $size; $i++)
 session_start();
 $uname=$_SESSION["username"];
 //$res='"'.$ca.','.$dq.','.$ddq.'"';
-$res=array("uname"=>$uname,"mcq"=>$ca,"dq"=>$dq,"ddq"=>$ddq);
+$res=array("uname"=>$uname,"mcq"=>$ca,"dq"=>$dq,"ddq"=>$ddq,"mcqt"=>12,"dqt"=>0,"ddqt"=>0);
 //$res=array("mcq"=>$ca,"dq"=>$dq,"ddq"=>$ddq);
 $col->insert($res);
 //echo $res;
