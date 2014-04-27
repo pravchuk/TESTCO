@@ -1,2 +1,2 @@
-{ "_id" : { "$oid" : "534eb2b7c986145f94d86fa4" }, "ans" : "abcdefg", "marksobt" : "4", "qid" : "q1", "qtype" : "desc", "ques" : "qwerty", "sol" : "shvauvikbvvbf", "testId" : "t1", "userId" : "a1" }
-{ "_id" : { "$oid" : "534eb2bcc986145f94d86fa5" }, "ans" : "zxcvbnm", "marksobt" : "6", "qid" : "q2", "qtype" : "desc", "ques" : "asdfghjkl", "sol" : "cvdygvdgcvcigv", "testId" : "t1", "userId" : "a1" }
+{ "_id" : { "$oid" : "534eb2b7c986145f94d86fa4" }, "ans" : "abcdefg", "marksobt" : "", "qid" : "q1", "qtype" : "desc", "ques" : "qwerty", "sol" : "shvauvikbvvbf", "testId" : "t1", "userId" : "a1" }
+{ "_id" : { "$oid" : "534eb2bcc986145f94d86fa5" }, "ans" : "zxcvbnm", "marksobt" : "", "qid" : "q2", "qtype" : "desc", "ques" : "asdfghjkl", "sol" : "cvdygvdgcvcigv", "testId" : "t1", "userId" : "a1" }

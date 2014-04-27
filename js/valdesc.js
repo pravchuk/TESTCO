@@ -41,7 +41,7 @@ function loadQuestion()
 	  }
     }
 
-  xmlhttp.open("GET","valdesc.php",true);
+  xmlhttp.open("POST","valdesc.php",true);
   xmlhttp.send();
 }
 function pushValid(v)
@@ -67,6 +67,6 @@ function pushValid(v)
       }
     }
 
-  xmlhttp.open("GET","valmcqResponse.php?testId="+testid+"&qid="+qid+"&valid="+v,true);
+  xmlhttp.open("POST","valmcqResponse.php?testId="+testid+"&qid="+qid+"&valid="+v,true);
   xmlhttp.send();
 }
