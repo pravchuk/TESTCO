@@ -21,7 +21,7 @@ function loadStudentProfiles()
 	  }
     }
 
-  xmlhttp.open("GET","profiles.php",true);
+  xmlhttp.open("GET","tempprofiles.php",true);
   xmlhttp.send();
   
 }
