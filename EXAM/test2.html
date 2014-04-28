@@ -35,6 +35,13 @@
     <!-- Required CSS Scripts -->
     <link rel="stylesheet" type="text/css" href="../css/index.css">
 
+    <!--CSS Dedicated to this page-->
+    <style>
+    #simplemodal-container{
+      height: 500px;
+    }
+    </style>
+
   </head> 
 
   <body onload="allEvents();loadQuestions();"> 
@@ -57,8 +64,11 @@
                   <textarea class="form-control" rows="6" id="textans"></textarea>
                   
                   <!-- modal content -->
-                  <div id="basic-modal-content">
+                  <div style="height:450px!important;" id="basic-modal-content">
                     <canvas id="simple_sketch" width="555" height="400"></canvas>
+                    <button onclick="$('#basic-modal-content').modal()" type="button" class="btn btn-danger btn-block btn-lg calcButton">
+                      <span class="glyphicon glyphicon-floppy-disk basic"></span> Save
+                  </button>
                   </div>
                   <!-- preload the images -->
                   <div style='display:none'>

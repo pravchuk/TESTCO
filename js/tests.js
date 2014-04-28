@@ -160,15 +160,12 @@ function complete()
  window.open("mockResult.html",_self);
 }
 
-/*function
-    $('#simple_sketch').sketch();
-  });
-
+//Drawing function
 
  $(function() {
     $('#simple_sketch').sketch();
   });
-*/
+
 //  $('#upload').click(function () {
 //     $.post('/upload_image.php', { data: $('#myCanvas').get(0).toDataURL() }, function () {
 //          alert('uploaded');
