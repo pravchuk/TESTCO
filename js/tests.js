@@ -128,7 +128,7 @@ function prevQuestion(){
 function results()
 {
 	//$_SESSION['result']=res;
-	 window.open("http://localhost/TESTCO/mockResult.html","_self");
+	 window.open("../mockResult.html","_self");
 }
 function complete()
 {
@@ -167,13 +167,35 @@ function complete()
 
 //Drawing function
 
- $(function() {
-    $('#simple_sketch').sketch();
-  });
+ // $(function() {
+ //    $('#simple_sketch').sketch();
+ //  });
 
 //  $('#upload').click(function () {
 //     $.post('/upload_image.php', { data: $('#myCanvas').get(0).toDataURL() }, function () {
 //          alert('uploaded');
 //     });
 // });
+
+
+//countdown timer
+function countDown(count){
+
+  var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+  var timer = function()
+  {
+    count=count-1;
+    if (count <= 0)
+    {
+       clearInterval(counter);
+       //counter ended, do something here
+       return;
+    }
+    document.getElementById('CountDown').innerHTML = count;
+
+    //Do code for showing the number of seconds here
+  }
+}
+
 

@@ -24,11 +24,11 @@
 
   </head> 
 
-  <body onload="allEvents();loadQuestions();"> 
+  <body onload="allEvents();loadQuestions();countDown(60);"> 
     <div class="testHeader">
-      <h1 class="col-md-8">TESTCO</h1>
+      <h1 class="col-md-8"><span><img class="testHeadImage" src="../img/logo-small-white.png"/></span>TESTCO Exam</h1>
       <div class="timeAndStuff col-md-4">
-          <h3 id="timeLeft">Time Left: <b>10:30</b></h3>
+          <h3 id="timeLeft">Time Left: <b id="CountDown">10:30</b></h3>
           <h3 id="candidateName">Praveen Chukka</h3>
       </div>
     </div>
