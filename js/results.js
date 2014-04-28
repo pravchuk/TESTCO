@@ -19,7 +19,9 @@ function loadResults()
 	//console.log(obj);
 		//console.log(xmlhttp.responseText);
 	  //section wise scores
-	  document.getElementById("total").innerHTML=(obj.mcq+obj.dq+obj.ddq) +"/"+(obj.mcqt+obj.dqt+obj.ddqt);
+	  var total=obj.mcqt+obj.dqt+obj.ddqt;
+	  document.getElementById("name").innerHTML=obj.uname;
+	  document.getElementById("total").innerHTML=(obj.mcq+obj.dq+obj.ddq) +"/"+total;
       document.getElementById("mcq").innerHTML=obj.mcq +"/"+obj.mcqt;
 	  document.getElementById("dq").innerHTML=obj.dq +"/"+ obj.dqt;
 	  document.getElementById("ddq").innerHTML=obj.ddq + "/"+obj.ddqt;
@@ -30,7 +32,7 @@ function loadResults()
 	  dd=parseInt(obj.ddq);
 	  total=m+d+dd;
 	  
-	  document.getElementById("total").innerHTML="Your score in the mock test: "+total+"/240";
+	//  document.getElementById("total").innerHTML="Your score in the mock test: "+total+"/240";
 	  
       }
     }

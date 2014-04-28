@@ -60,13 +60,13 @@ function pushMcq()
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-     // var obj = eval ("(" +xmlhttp.responseText+ ")");;
-	  //console.log(obj);
+      //var obj = eval ("(" +xmlhttp.responseText+ ")");;
+	 console.log(xmlhttp.responseText);
       
       }
     }
   
   xmlhttp.open("POST","contrMcq.php?ca="+ca+"&marks="+marking+"&ques="+ques+"&subj="+subject+"&tags="+tags+"&testId="+testId+"&opt1="+opt1+"&opt2="+opt2+"&opt3="+opt3+"&opt4="+opt4,true);
   xmlhttp.send();
-  location.reload();
+  //location.reload();
 }
