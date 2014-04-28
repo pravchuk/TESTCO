@@ -14,11 +14,15 @@ function loadResults()
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-      var obj = eval ("(" +xmlhttp.responseText+ ")");
+    var obj = eval("(" +xmlhttp.responseText+ ")");
+	
+	//console.log(obj);
+		//console.log(xmlhttp.responseText);
 	  //section wise scores
-      document.getElementById("mcq").innerHTML=obj.mcq + "/80";
-	  document.getElementById("dq").innerHTML=obj.dq + "/80";
-	  document.getElementById("ddq").innerHTML=obj.ddq + "/80";
+	  document.getElementById("total").innerHTML=(obj.mcq+obj.dq+obj.ddq) +"/"+(obj.mcqt+obj.dqt+obj.ddqt);
+      document.getElementById("mcq").innerHTML=obj.mcq +"/"+obj.mcqt;
+	  document.getElementById("dq").innerHTML=obj.dq +"/"+ obj.dqt;
+	  document.getElementById("ddq").innerHTML=obj.ddq + "/"+obj.ddqt;
 	  
 	  //total score
 	  m=parseInt(obj.mcq);
@@ -31,6 +35,6 @@ function loadResults()
       }
     }
 
-  xmlhttp.open("POST","results.txt",true);
+  xmlhttp.open("POST","results2.php",true);
   xmlhttp.send();
 }

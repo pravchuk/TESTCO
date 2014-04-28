@@ -8,7 +8,7 @@ $m = new Mongo("mongodb://$dbhost");
 $db = $m->$dbname;  
 //$name=$_GET["username"]; 
 // select the collection  
-$collection = $db->profiles;  
+$collection = $db->res;  
   
 // pull a cursor query 
 //echo $_SESSION['username'];

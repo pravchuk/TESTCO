@@ -11,7 +11,7 @@ $m = new Mongo("mongodb://$dbhost");
 $db = $m->$dbname;  
   
 // select the collection  
-$collection = $db->descq;  
+$collection = $db->testdesc;  
 //insert a tupple
 //$item=array('uname'=>'neo','age'=>28,'profession'=>'hacker');
 //$collection->insert($item);

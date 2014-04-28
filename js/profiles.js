@@ -17,6 +17,7 @@ function loadProfiles()
       var obj = eval("(" +xmlhttp.responseText+ ")");
 	  //console.log(obj.name);
 	 // document.getElementByID("image").innerHTML = obj.image;
+	 console.log(obj);
 	  document.getElementById("name").innerHTML = obj.name;
 	  document.getElementById("place").innerHTML = obj.place;
       document.getElementById("about").innerHTML = "age: " + obj.about.age + "</br>" + "Education: " + obj.about.edu + "</br>" + "Current Employer: " + obj.about.curemp + "</br>" + "Email: " + obj.about.email + "</br>" + "Degree: " + obj.about.degree + "</br>" + "Projects: " + obj.about.projects;

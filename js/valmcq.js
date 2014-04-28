@@ -18,7 +18,7 @@ function loadQuestion()
       {
 	  
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-	  //console.log(xmlhttp.responseText);
+	  console.log(xmlhttp.responseText);
       //var obj = eval ("(" +xmlhttp.responseText+ " )");;
 	  try
 	{
@@ -43,7 +43,7 @@ function loadQuestion()
 	  }
     }
 
-  xmlhttp.open("GET","valmcq.php",true);
+  xmlhttp.open("POST","valmcq.php",true);
   xmlhttp.send();
 }
 function pushValid(v)
@@ -69,6 +69,6 @@ function pushValid(v)
       }
     }
 
-  xmlhttp.open("GET","valmcqresponse.php?testId="+testid+"&qid="+qid+"&valid="+v,true);
+  xmlhttp.open("POST","valmcqresponse.php?testId="+testid+"&qid="+qid+"&valid="+v,true);
   xmlhttp.send();
 }

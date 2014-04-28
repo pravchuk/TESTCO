@@ -1,6 +1,6 @@
 <?php  
 // Config  
-$todo=$_POST['what'];
+
 $size=$_POST['size'];
 
 	$ans=array();
@@ -25,6 +25,7 @@ $dq=0;
 $ddq=0;
 // select the collection  
 $collection = $db->mcq;    
+$col=$db->res;
 // pull a cursor query  
 //$aa=array('uname'=>'manisha','mcqs'=>45);
 for ($i =1; $i < $size; $i++)
@@ -48,12 +49,14 @@ for ($i =1; $i < $size; $i++)
 }
 //echo ' ';
 
-$res= '{ "mcq":'. $ca . ",dq:" . $dq . ',"ddq":'. $ddq .'}';
-$res=stripslashes($res);
-$fp = fopen('results.txt', 'w');
-fwrite($fp, json_encode($res));
-fclose($fp);
-echo $res;
+//$res= '{ "mcq":'. $ca . ',"dq":' . $dq . ',"ddq":'. $ddq .'}';
+session_start();
+$uname=$_SESSION["username"];
+//$res='"'.$ca.','.$dq.','.$ddq.'"';
+$res=array("uname"=>$uname,"mcq"=>$ca,"dq"=>$dq,"ddq"=>$ddq,"mcqt"=>12,"dqt"=>0,"ddqt"=>0);
+//$res=array("mcq"=>$ca,"dq"=>$dq,"ddq"=>$ddq);
+$col->insert($res);
+//echo $res;
 
 
   

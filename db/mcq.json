@@ -1,4 +1,12 @@
-{ "_id" : "pe1", "quest" : "What is the unit of Energy?", "sub" : "phy", "tag" : "energy", "opt1" : "J", "opt2" : "K", "opt3" : "M", "opt4" : "N", "ca" : "1", "qNo" : 1 }
-{ "_id" : "pg1", "quest" : "what is the value of g?", "sub" : "phy", "tag" : "gravity", "opt1" : "9.0", "opt2" : "8.6", "opt3" : "9.8", "opt4" : "7.9", "ca" : "3", "qNo" : 2 }
-{ "_id" : "pm1", "quest" : "A bar magnet is equivalent to _______.", "sub" : "phy", "tag" : "energy", "opt1" : " solenoid carrying current", "opt2" : "circular coil carrying current", "opt3" : "toroid carrying current ", "opt4" : "straight conductor carrying current", "ca" : "1", "qNo" : 3 }
-{ "_id" : "ps1", "quest" : "What is the value of escape velocity?", "sub" : "phy", "tag" : "speed", "opt1" : "10.5", "opt2" : "11.2", "opt3" : "13.5", "opt4" : "12.3", "ca" : "2", "qNo" : 4 }
+{ "_id" : "pe1", "quest" : "What is the unit of Energy?", "sub" : "phy", "tag" : "energy", "opt1" : "J", "opt2" : "K", "opt3" : "M", "opt4" : "N", "ca" : "1", "qNo" : 1,"level":1}
+{ "_id" : "pg1", "quest" : "what is the value of g?", "sub" : "phy", "tag" : "gravity", "opt1" : "9.0", "opt2" : "8.6", "opt3" : "9.8", "opt4" : "7.9", "ca" : "3", "qNo" : 2,"level":2 }
+{ "_id" : "pm1", "quest" : "A bar magnet is equivalent to _______.", "sub" : "phy", "tag" : "energy", "opt1" : " solenoid carrying current", "opt2" : "circular coil carrying current", "opt3" : "toroid carrying current ", "opt4" : "straight conductor carrying current", "ca" : "1", "qNo" : 3,"level":3 }
+{ "_id" : "ps1", "quest" : "What is the value of escape velocity?", "sub" : "phy", "tag" : "speed", "opt1" : "10.5", "opt2" : "11.2", "opt3" : "13.5", "opt4" : "12.3", "ca" : "2", "qNo" : 4,"level":4 }
+{ "_id" : "pe2", "quest" : "What is the formula for Potential Enegry?", "sub" : "phy", "tag" : "energy", "opt1" : "mg", "opt2" : "gh", "opt3" : "mh", "opt4" : "mgh", "ca" : "4", "qNo" : 5,"level":5 }
+{ "_id" : "cr1", "quest" : "+I effect is shown by", "sub" : "chem", "tag" : "reso", "opt1" : "NO2", "opt2" : "Br", "opt3" : "Cl", "opt4" : "CH3", "ca" : "4", "qNo" : 5,"level":6 }
+{ "_id" : "cs1", "quest" : "0.023 g of sodium metal is reacted with 100 cm3 of water. The pH of the resulting solution is ______.", "sub" : "chem", "tag" : "reso", "opt1" : "11", "opt2" : "12", "opt3" : "10", "opt4" : "9", "ca" : "2", "qNo" : 6,"level":7 }
+{ "_id" : "cr2", "quest" : "Which one of the following is paramagnetic?", "sub" : "chem", "tag" : "stoi", "opt1" : "N2", "opt2" : "NO", "opt3" : "CO", "opt4" : "O3", "ca" : "2", "qNo" : 6,"level":6 }
+{ "_id" : "co1", "quest" : "Which one is not a constituent of nucleic acid?", "sub" : "chem", "tag" : "organic", "opt1" : "Uralic", "opt2" : "Guanide", "opt3" : "Phosphoric acid", "opt4" : "Ribose Sugar", "ca" : "1", "qNo" : 7,"level":5 }
+{ "_id" : "ma1", "quest" : "3+2", "sub" : "math", "tag" : "add", "opt1" : "9", "opt2" : "5", "opt3" : "7", "opt4" : "11", "ca" : "2", "qNo" : 8,"level":3 }
+{ "_id" : "mm1", "quest" : "3*2", "sub" : "math", "tag" : "mult", "opt1" : "9", "opt2" : "5", "opt3" : "6", "opt4" : "11", "ca" : "3", "qNo" : 9,"level":3}
+{ "_id" : "mb1", "quest" : "(3+2)/0", "sub" : "math", "tag" : "bodmas", "opt1" : "0", "opt2" : "5", "opt3" : "5.0", "opt4" : "infinity", "ca" : "4", "qNo" : 10,"level":3 }

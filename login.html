@@ -64,7 +64,7 @@
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <form  action="register.php" method="POST" autocomplete="on"> 
                                 <h1> Sign up </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your name</label>
@@ -78,8 +78,12 @@
                                     <label for="dob" class="youdob" data-icon="d">Your date of birth</label>
                                     <input id="dobsignup" name="dobsignup" required="required" type="date" placeholder="mm/dd/yyyy"/>
                                 </p>
+								<p> 
+                                    <label for="password" class="password" data-icon="p">Enter Password</label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                                </p>
                                 <p> 
-                                    <label for="verificationdoc" class="youverification" data-icon="p">Please attach a document to verify your age proof </label>
+                                    <label for="verificationdoc" class="youverification" data-icon="f">Please attach a document to verify your age proof </label>
                                     <input id="verificationdocsignup" name="verificationdocsignup" required="required" type="file" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p class="signin button"> 
@@ -96,6 +100,7 @@
                 </div>  
             </section>
         </div>
+		<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 		<div id="footer"></div>
 	</body>
 </html>
