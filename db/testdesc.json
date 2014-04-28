@@ -1,0 +1,5 @@
+{ "_id" : "pm1", "quest" : "Explain three states of matter?", "sub" : "phy", "tag" : "matter", "qNo":1}
+{ "_id" : "pf1", "quest" : "Explain archimedes principe.", "sub" : "phy", "tag" : "fluid", "qNo":2}
+{ "_id" : "pt1", "quest" : "Explain laws of thermodyamics", "sub" : "phy", "tag" : "therm", "qNo":3}
+{ "_id" : "pr1", "quest" : "Explain reflection of light in different glasses.", "sub" : "phy", "tag" : "light", "qNo":4}
+{ "_id" : "gen1", "quest" : "Why do you wish to join our institute?", "sub" : "gen", "tag" : "choice", "qNo":5}
