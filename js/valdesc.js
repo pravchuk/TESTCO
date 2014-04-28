@@ -29,6 +29,7 @@ function loadQuestion()
 	  document.getElementById("ans").innerHTML=obj.ca;
 	  
 	  testid=obj.testId;
+	  console.log(testid+"in pull");
 	  //userid=obj.userId;
 	  qid=obj.qid;
 	}
@@ -60,13 +61,16 @@ function pushValid(v)
     xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
+	  console.log(xmlhttp.responseText);
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
      // var obj = eval ("(" +xmlhttp.responseText+ ")");;
 	  //console.log(obj);
+	  	  
+
       
       }
     }
-
+	console.log(qid+" "+testid+"in push");
   xmlhttp.open("POST","valmcqResponse.php?testId="+testid+"&qid="+qid+"&valid="+v,true);
   xmlhttp.send();
 }

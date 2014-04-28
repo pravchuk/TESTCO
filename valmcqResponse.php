@@ -7,6 +7,7 @@ $dbname = 'testco';
 $testId=$_GET["testId"];
 $qid=$_GET["qid"];
 $valid=$_GET["valid"];
+echo ($valid);
 // Connect to test database  
 $m = new Mongo("mongodb://$dbhost");  
 $db = $m->$dbname;  
@@ -14,7 +15,7 @@ $db = $m->$dbname;
 // select the collection  
 $collection = $db->questions;  
 //insert a tupple
-$item=array('testId'=>$testId,'qid'=>$qid);
+$item=array('qid'=>$qid);
 //$collection->insert($item);
   
 // pull a cursor query

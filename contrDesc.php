@@ -29,7 +29,7 @@ foreach($data as $d) {
 //insert a tupple
 //$item=array('q'=>$userId,'testId'=>$testId,'qid'=>$qid);
 $qid=$qid+1;
-$item=array("ca" => $ca, "marks" => $marks , "qid" => $qid, "qtype" => "desc", "question" => $ques, "subject" => $subj, "tags" => $tags, "testId" => $testId, "validated" => "no");
+$item=array("ca" => $ca, "marks" => $marks , "qid" => strval($qid), "qtype" => "desc", "question" => $ques, "subject" => $subj, "tags" => $tags, "testId" => $testId, "validated" => "no");
 $collection->insert($item);
  
 ?>   

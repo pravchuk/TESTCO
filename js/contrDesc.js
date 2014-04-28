@@ -23,11 +23,11 @@ function pushDesc()
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
      // var obj = eval ("(" +xmlhttp.responseText+ ")");;
-	  //console.log(obj);
+	  console.log(xmlhttp.responseText);
       
       }
     }
-
+		//contrDesc.php?ca=rightans&marks=4&ques=what%20is%20the%20question&subj=subject&tags=tag1,tag2&testId=tid
   xmlhttp.open("POST","contrDesc.php?ca="+ca+"&marks="+marking+"&ques="+ques+"&subj="+subject+"&tags="+tags+"&testId="+testId,true);
   xmlhttp.send();
   location.reload();
@@ -60,13 +60,14 @@ function pushMcq()
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
       //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-      //var obj = eval ("(" +xmlhttp.responseText+ ")");;
-	 console.log(xmlhttp.responseText);
+     // var obj = eval ("(" +xmlhttp.responseText+ ")");;
+	  console.log(xmlhttp.responseText);
       
       }
     }
+  //contrMcq.php?ca=ca&marks=marking&ques=ques&subj=subject&tags=tags&testId=testId&opt1=opt1&opt2=opt2&opt3=opt3&opt4=opt4
   
   xmlhttp.open("POST","contrMcq.php?ca="+ca+"&marks="+marking+"&ques="+ques+"&subj="+subject+"&tags="+tags+"&testId="+testId+"&opt1="+opt1+"&opt2="+opt2+"&opt3="+opt3+"&opt4="+opt4,true);
   xmlhttp.send();
-  //location.reload();
+  location.reload();
 }

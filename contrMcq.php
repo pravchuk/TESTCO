@@ -33,7 +33,8 @@ foreach($data as $d) {
 //insert a tupple
 //$item=array('q'=>$userId,'testId'=>$testId,'qid'=>$qid);
 $qid=$qid+1;
-$item=array("ca" => $ca, "marks" => $marks , "qid" => $qid, "qtype" => "mcq", "question" => $ques, "subject" => $subj, "tags" => $tags, "testId" => $testId, "validated" => "no","opt1"=>$opt1,"opt2"=>$opt2,"opt3"=>$opt3,"opt4"=>$opt4);
+$item=array("ca" => $ca, "marks" => $marks, "opt1" =>$opt1, "opt2" =>$opt2, "opt3" =>$opt3, "opt4" =>$opt4, "qid" => strval($qid), "qtype" => "mcq", "question" => $ques, "subject" => $subj, "tags" => $tags, "testId" => $testId, "validated" => "no"); 
+//$item=array("ca" => $ca, "marks" => $marks ,"opt1"=>$opt1,"opt2"=>$opt2,"opt3"=>$opt3,"opt4"=>$opt4 , "qid" => $qid, "qtype" => "mcq", "question" => $ques, "subject" => $subj, "tags" => $tags, "testId" => $testId, "validated" => "no");
 $collection->insert($item);
  
 ?>   
