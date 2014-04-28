@@ -13,10 +13,7 @@ $db = $m->$dbname;
 // select the collection  
 $collection = $db->mcq;  
 //insert a tupple
-//$item=array('uname'=>'neo','age'=>28,'profession'=>'hacker');
-//$collection->insert($item);
-  
-// pull a cursor query  
+
 $aa=array();//'sub'=>'phy','sub'=>'chem','sub'=>'math');
 $sds=array('ca'=>false);
 $cursor = $collection->find($aa,$sds);
